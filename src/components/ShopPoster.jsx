@@ -10,7 +10,7 @@ const ShopPoster = () => {
         src={Image}
         alt={Image}
       />
-      <p className=' absolute w-full h-auto text-center text-white text-7xl'>Shop</p>
+      <p className='absolute w-full h-auto text-center text-white text-7xl'>Shop</p>
     </div>
   )
 }

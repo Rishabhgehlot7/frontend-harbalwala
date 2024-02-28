@@ -6,7 +6,7 @@ const CategoryWithPrice = () => {
         setshowCategory(!showCategory)
     }
     return (
-        <div className=' w-[300px] h-auto bg-gray-50 shadow-lg m-4 rounded-lg p-2'>
+        <div className=' w-[300px] h-auto bg-gray-50 shadow-lg my-2 md:m-4 rounded-lg p-2'>
             <div className=' flex justify-between p-3 cursor-pointer' onClick={showCategoryHandler} >
                 <h3 className='px-3 py-1 text-xl cursor-pointer'>Sort By</h3>
                 <div className=' text-xl'>{">"}</div>

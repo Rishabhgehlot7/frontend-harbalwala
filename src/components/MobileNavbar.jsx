@@ -24,7 +24,7 @@ const MobileNavbar = () => {
                     <button className='px-2 font-medium'>USER</button>
                     <button className='px-2 font-medium' onClick={showMenu}>MENU</button>
                 </div>
-                <ul className={` fixed right-0 top-0 bg-gray-300 p-4 h-screen pt-7 w-[80%] flex flex-col ${show ? "" : "right-[-500px]"}`}>
+                <ul className={` fixed right-0 top-0 bg-gray-300 p-4 h-screen pt-7 w-[80%] flex flex-col z-30 ${show ? "" : "right-[-500px]"}`}>
                     <button className='absolute top-2 right-3' onClick={showMenu}>X</button>
                     <div className=' my-6'></div>
                     <input type="text" className='rounded-md border-black border-[1px] p-2 font-medium' placeholder='Search' />

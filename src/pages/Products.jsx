@@ -16,7 +16,7 @@ const Products = () => {
             <div className=' w-full h-auto'>
             </div>
             <div class="flex h-auto md:flex-row flex-col">
-                <div className='flex flex-col md:flex-col md:justify-start md:items-start items-center justify-center m-5'>
+                <div className='flex flex-col md:flex-col md:justify-start md:items-start items-center justify-center md:m-5'>
                     <CategoryFilter />
                     <CategoryWithPrice />
                 </div>

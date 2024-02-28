@@ -10,7 +10,7 @@ const CategoryFilter = () => {
         setShowSubCategory(!showSubCategory);
     }
     return (
-        <div className=' w-[300px] h-auto bg-gray-50 m-4 shadow-lg rounded-lg'>
+        <div className=' w-[300px] h-auto bg-gray-50 my-4 md:m-4 shadow-lg rounded-lg'>
             <h3 className='px-3 py-1 text-xl cursor-pointer' onClick={showCategoryMain}> {'>'} ALL Category</h3>
             <div className={`p-3 ${showMainCategory ? '' : "hidden"}`}>
                 <h4 className='px-3 py-1 cursor-pointer' onClick={showCategorySub}>{'>'} HairCare</h4>
