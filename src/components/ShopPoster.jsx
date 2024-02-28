@@ -6,7 +6,7 @@ const ShopPoster = () => {
   return (
     <div className=' w-screen h-auto bg-yellow-300 flex justify-center items-center text-5xl md:text-7xl'>
       <Img
-        className="md:h-auto h-full object-cover rounded-bl-lg rounded-br-lg w-full"
+        className="md:h-auto min-h-80 h-full object-cover rounded-bl-lg rounded-br-lg w-full"
         src={Image}
         alt={Image}
       />
