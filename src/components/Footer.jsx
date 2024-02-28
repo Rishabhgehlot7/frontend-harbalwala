@@ -25,15 +25,15 @@ const Footer = () => {
                 </ul>
                 <div></div>
                 <div className='flex flex-col justify-between items-start text-white py-3'>
-                    <div className=' flex px-2 text-sm flex-col'>
-                        <div>Copyright 2023</div>
+                    <div className=' flex flex-col'>
+                        <div>Copyright 2024</div>
                         <p>HERBALWALA | Powered by Aditi Tech Service</p>
                     </div>
                     <ul className=' flex list-none flex-col md:flex-row'>
-                        <li className=' text-sm pl-2'>FaceBook</li>
-                        <li className=' text-sm pl-2'>Instagram</li>
-                        <li className=' text-sm pl-2'>Treads</li>
-                        <li className=' text-sm pl-2'>Email</li>
+                        <li className='pr-2'>FaceBook</li>
+                        <li className='pr-2'>Instagram</li>
+                        <li className='pr-2'>Treads</li>
+                        <li className='pr-2'>Email</li>
                     </ul>
                 </div>
             </div>

@@ -9,7 +9,7 @@ const ContactComponent = () => {
           <h2 className='text-center w-32 h-1 bg-black'></h2>
         </div>
         <div className='flex md:flex-row flex-col gap-3 justify-evenly pt-9'>
-          <div className=' w-96 shadow-lg rounded-lg min-h-96 bg-white'>
+          <div className=' max-w-96 shadow-lg rounded-lg min-h-96 bg-white'>
             <h2 className=' text-3xl text-green-500 p-3 font-medium '>Location</h2>
             <p className=' p-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quam doloribus, asperiores veniam vitae distinctio quo maiores modi omnis quis minima, enim nesciunt fugiat officia. Ullam.</p>
             <div className=' font-bold p-3'>+91-998875423</div>
