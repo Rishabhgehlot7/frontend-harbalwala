@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const MobileNavbar = () => {
     const [show, setShow] = useState(false)
@@ -17,7 +18,7 @@ const MobileNavbar = () => {
                 </div>
             </div>
             <div className=' w-screen h-auto flex justify-between p-5 items-center max-w-7xl m-auto'>
-                <div className=' font-medium'>LOGO</div>
+                <Link to={'/'} className=' font-medium'>LOGO</Link>
                 <div>
                     <button className='px-2 font-medium'>CARD</button>
                     <button className='px-2 font-medium'>USER</button>
@@ -27,10 +28,10 @@ const MobileNavbar = () => {
                     <button className='absolute top-2 right-3' onClick={showMenu}>X</button>
                     <div className=' my-6'></div>
                     <input type="text" className='rounded-md border-black border-[1px] p-2 font-medium' placeholder='Search' />
-                    <li className=' px-2 font-medium p-2'>Home</li>
-                    <li className=' px-2 font-medium p-2'>Products</li>
-                    <li className=' px-2 font-medium p-2'>About</li>
-                    <li className=' px-2 font-medium p-2'>Contact</li>
+                    <Link to={'/'} className=' px-2 font-medium p-2'>Home</Link>
+                    <Link to={'/Products'} className=' px-2 font-medium p-2'>Products</Link>
+                    <Link to={'/About'} className=' px-2 font-medium p-2'>About</Link>
+                    <Link to={'/Contact'} className=' px-2 font-medium p-2'>Contact</Link>
                 </ul>
             </div>
         </div>

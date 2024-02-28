@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -14,12 +15,12 @@ const Header = () => {
                 </div>
             </div>
             <div className=' w-screen h-auto flex justify-between p-5 items-center max-w-7xl m-auto'>
-                <div className=' font-medium'>LOGO</div>
+                <Link to={'/'} className=' font-medium'>LOGO</Link>
                 <ul className='flex justify-center'>
-                    <li className=' px-3 font-medium'>Home</li>
-                    <li className=' px-3 font-medium'>Products</li>
-                    <li className=' px-3 font-medium'>About</li>
-                    <li className=' px-3 font-medium'>Contact</li>
+                    <Link to={'/'} className=' px-3 font-medium'>Home</Link>
+                    <Link to={'/Products'} className=' px-3 font-medium'>Products</Link>
+                    <Link to={'/About'} className=' px-3 font-medium'>About</Link>
+                    <Link to={'/Contact'} className=' px-3 font-medium'>Contact</Link>
                 </ul>
                 <input type="text" className=' w-96 rounded-md border-black border-[1px] p-1' placeholder='Search' />
             </div>
