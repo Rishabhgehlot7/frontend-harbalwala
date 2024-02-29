@@ -24,6 +24,37 @@ const Header = () => {
                 </ul>
                 <input type="text" className=' w-96 rounded-md border-black border-[1px] p-1' placeholder='Search' />
             </div>
+            <div className='fixedBox w-[30%] h-auto p-8 bg-gray-300 flex justify-center items-center rounded-md shadow-2xl'>
+                <div className=' pb-14'>
+                    <span className=' absolute right-4 top-1'>X</span>
+                    <div className=' flex'>
+                        <div className={`px-12 py-2 bg-green-700 rounded-sm text-white font-medium`}>Log in</div>
+                        <div className={`px-12 py-2 bg-green-700 rounded-sm text-white font-medium`}>Sign in</div>
+                    </div>
+                    <p className='text-xs p-1'>Don't Have an account?<span className=' text-xs font-medium'>Create now</span></p>
+                    <form>
+                        <div className='py-1'>
+                            <label htmlFor="" className=' text-sm'>Username/Email</label>
+                            <input type="text" className=' rounded-md p-1 w-full outline-lime-400 my-1' placeholder='example@gmail.com' />
+                        </div>
+                        <div className='py-1'>
+                            <label htmlFor="" className=' text-sm'>Password</label>
+                            <input type="password" className=' rounded-md p-1 w-full outline-lime-400 my-1' placeholder='@#$%' />
+                        </div>
+                        <div className='flex justify-between py-2'>
+                            <div className='flex items-center'>
+                                <input type="checkbox" name="" id="" />
+                                <label htmlFor="" className='text-xs px-1'>Remember me</label>
+                            </div>
+                            <button className='underline text-xs'>forgot Password</button>
+                        </div>
+                        <button className=' w-full bg-green-700 text-white font-medium p-1 rounded-md my-1'>Log in</button>
+                    </form>
+                    <hr className=' bg-black my-4' />
+                    <button className=' shadow-2xl bg-gray-100 w-full py-1 rounded-3xl text-sm'>Continue with Google</button>
+
+                </div>
+            </div>
         </div>
     )
 }
