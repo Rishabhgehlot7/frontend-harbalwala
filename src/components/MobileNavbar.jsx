@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-
+import userIcon from '../images/icons/user.svg'
+import cartIcon from '../images/icons/cart.svg'
+import logo from '../images/icons/logo.svg'
+import menu from '../images/icons/menu.svg'
 const MobileNavbar = () => {
     const [show, setShow] = useState(false)
     const [showLogin, setShowLogin] = useState(true)
@@ -15,18 +18,26 @@ const MobileNavbar = () => {
     }, [show])
 
     return (
-        <div className=' w-screen h-auto bg-gray-200 md:hidden'>
+        <div className=' w-screen h-auto bg-gray-100 md:hidden'>
             <div className='bg-green-900 w-full h-full'>
                 <div className='w-screen h-auto p-2 text-white flex justify-center max-w-7xl m-auto'>
                     <h1>Use code FIRST50 for a 50% discount on your first order!</h1>
                 </div>
             </div>
-            <div className=' w-screen h-auto flex justify-between p-5 items-center max-w-7xl m-auto'>
-                <Link to={'/'} className=' font-medium'>LOGO</Link>
-                <div>
-                    <Link to={'/Card'} className='px-2 font-medium'>CARD</Link>
-                    <Link onClick={showLoginPopUpPage} className='px-2 font-medium'>USER</Link>
-                    <Link to={'/'} className='px-2 font-medium' onClick={showMenu}>MENU</Link>
+            <div className=' w-screen h-auto flex justify-between p-2 items-center max-w-7xl m-auto'>
+                <Link to={'/'} className=' font-medium w-12'>
+                    <img src={logo} alt="" className='' />
+                </Link>
+                <div className='flex'>
+                    <Link to={'/Card'} className=''>
+                        <img src={cartIcon} alt="" className=' invert' />
+                    </Link>
+                    <Link onClick={showLoginPopUpPage} className='px-2 font-medium'>
+                        <img src={userIcon} alt="" className=' invert' />
+                    </Link>
+                    <Link to={'/'} className='px-2 font-medium' onClick={showMenu}>
+                        <img src={menu} alt="" />
+                    </Link>
                 </div>
                 <ul className={` fixed right-0 top-0 bg-gray-300 p-4 h-screen pt-7 w-[80%] flex flex-col z-30 ${show ? "" : "right-[-500px]"}`}>
                     <button className='absolute top-2 right-3' onClick={showMenu}>X</button>
