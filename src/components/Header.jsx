@@ -9,8 +9,8 @@ const Header = () => {
                     <div></div>
                     <h1>Use code FIRST50 for a 50% discount on your first order!</h1>
                     <div className='flex'>
-                        <button className='px-2 font-medium'>CARD</button>
-                        <button className='px-2 font-medium'>USER</button>
+                        <Link to={'/Card'} className='px-2 font-medium'>CARD</Link>
+                        <Link to={'/'} className='px-2 font-medium'>USER</Link>
                     </div>
                 </div>
             </div>

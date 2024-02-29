@@ -8,6 +8,7 @@ import Products from './pages/Products';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Card from './pages/Card';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "Contact",
     element: <Contact />
+  },
+  {
+    path: "Card",
+    element: <Card />
   },
 ]);
 
