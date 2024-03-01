@@ -3,6 +3,7 @@ import ProductCard from './ProductCard'
 
 
 const PRoductsContainer = () => {
+    
     return (
         <div class="container mx-auto p-4">
             <h2 className=' text-3xl p-3 font-medium text-center'>Hot Sale</h2>

@@ -9,6 +9,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Card from './pages/Card';
+import ProductDetailPage from './pages/ProductDetailPage';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "Card",
     element: <Card />
+  },
+  {
+    path: "ProductDetailPage",
+    element: <ProductDetailPage />
   },
 ]);
 
